@@ -1,0 +1,243 @@
+body {
+  height: 100vh;
+}
+#header {
+  z-index: 5000;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  position: relative;
+}
+#header .container {
+  padding: 0;
+  width: auto;
+}
+#main-header {
+  color: #e2eaf2;
+  height: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  position: relative;
+  z-index: 5000;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+#vidyut-bg {
+  /* background-repeat: none; */
+  background-size: cover;
+  position: relative;
+  min-height: 90px;
+  text-align: right;
+  background-image: url('./_assets/cover.png');
+  border-radius: 10px;
+  /* margin-top: 15px; */
+}
+
+.vidyut-bg img {
+  position: absolute;
+  right: 63px;
+  top: 18px;
+}
+
+.containers {
+    /* min-height: 100vh; */
+    padding: 20px 0px 20px 15px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.section {
+  padding: 30px 0;
+  background: #fff;
+}
+
+p {
+    margin: 0px
+}
+
+.card {
+    padding: 20px 30px 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden
+}
+
+.card .backgroundEffect {
+    bottom: 0;
+    height: 0px;
+    width: 100%
+}
+
+.card:hover {
+    color: #000;
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+
+/* .card:hover .backgroundEffect {
+    bottom: 0;
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #ff0000;
+    animation: popBackground 0.3s ease-in
+} */
+
+/* @keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+} */
+
+
+.btn-sp{
+  background-color: #ff0000 !important;
+  color: #ffffff !important;
+}
+
+.card .text-muted {
+    font-size: 12px
+}
+
+.card:hover .text-muted {
+    color: #fff !important
+}
+
+
+.card .content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #006d3c;
+    border-radius: 25px;
+    font-size: 12px;
+    border: none
+}
+
+.card:hover .content .btn {
+    background: #006d3c;
+    color: #fff;
+    box-shadow: #0000001a 0px 3px 5px
+}
+
+
+
+.h-1 {
+  font-size: 28px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  #vidyut-bg {
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+    min-height: 90px;
+    text-align: right;
+    background-image: url(./_assets/cover.png);
+    border-radius: 10px;
+  }
+  .h-1 {
+    font-size: 21px;
+  }
+  .containers {
+      min-height: 100vh;
+      padding: 20px 0px 20px 15px;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+  }
+}
+
+#logo {
+  position: relative;
+  top: 0px;
+}
+
+@media (max-width: 767px) {
+  #logo {
+    height: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .containers {
+    min-height: 100vh;
+    padding: 20px 0px 20px 15px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .h-1 {
+    font-size: 21px;
+  }
+  
+  /* .container {
+
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #vidyut-bg {
+    position: relative;
+    min-height: 90px;
+    text-align: right;
+    background: url(./_assets/cover.png) no-repeat center center;
+    border-radius: 10px;
+  }
+  .d-lg-flex {
+    display: flex;
+    
+  }
+
+  .h-1 {
+    font-size: 21px;
+  }
+
+  .card {
+      padding: 20px 30px 30px 30px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background: #fff;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      user-select: none;
+      z-index: 10;
+      overflow: hidden;
+      margin-left: 10px;
+  }
+}
